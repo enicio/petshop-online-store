@@ -1,10 +1,10 @@
 import React from 'react';
 
-import logo from '../assets/logo.png';
-import Delivery_motocycle from '../assets/Delivery_motocycle.png';
-import isopen from '../assets/isopen.png';
+import logo from '../../assets/logo.png';
+import Delivery_motocycle from '../../assets/Delivery_motocycle.png';
+import isopen from '../../assets/isopen.png';
 
-import './header.scss';
+import '../header/header.scss';
 
 function Header() {
   return(
