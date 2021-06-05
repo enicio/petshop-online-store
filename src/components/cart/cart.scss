@@ -1,0 +1,36 @@
+.cart {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #B41C8B;
+  border-radius: 5px;
+  padding: 0 5px 0 5px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+
+  min-width: 315px;
+
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+
+  &__quantity {
+    color: #FFFFFF;
+  }
+  &__text{
+    color: #FFFFFF;
+  }
+  &__price {
+    color: #B41C8B;
+    background: #FFFFFF;
+    border-radius: 1000px;
+    padding: 4px;
+  }
+}
