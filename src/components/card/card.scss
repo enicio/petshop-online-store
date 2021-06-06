@@ -1,0 +1,53 @@
+.card {
+  width: 232px;
+  height: 336px;
+
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  &__product-image {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+  }
+  &__name {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;
+    color: #3F3F3F;
+  }
+  &__botton {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    &__price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 20px;
+
+      color: #3F3F3F;
+
+      &__old {
+        // background-color: violet;
+        color: red;
+        text-decoration-line: line-through;
+      }
+    }
+    button {
+      background: transparent;
+      border: none;
+      img {
+        margin-top: 6px;
+      }
+    }
+  }
+}
