@@ -13,7 +13,7 @@ function CardContainer() {
 
   return(
     <section className="card_container">
-      { productsToRender.map((product) => <Card key={Math.random()} product={product} /> )}
+      { productsToRender.map((product) => <Card key={product.id} product={product} /> )}
     </section>
 
   );

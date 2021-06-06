@@ -1,0 +1,29 @@
+.categories {
+  width: 100%;
+  margin-top: 20px;
+  &__scroll {
+    height: 32px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    label {
+
+      padding: 4px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #3F3F3F;
+      &.checked {
+        color: #B41C8B;
+        // text-decoration-line: underline;
+        border-bottom: 2px solid #B41C8B;
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+}

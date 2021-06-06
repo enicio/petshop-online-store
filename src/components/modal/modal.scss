@@ -1,0 +1,128 @@
+.modal{
+  background-color: rgb(255, 255, 255);
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  // color: black;
+  &__header{
+    width: 100%;
+    height: 50px;
+    background-color: #B41C8B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__button::before {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #B41C8B;
+      border-right: 2px solid #B41C8B;
+      transform: rotate(225deg);
+    }
+    &__button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+      margin-left: 8px;
+    }
+    span {
+      margin-left: 8px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      /* identical to box height */
+      color: #FFFFFF;
+    }
+  }
+  &__image {
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+  }
+  &__description {
+    text-align: left;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+  }
+  &__observations {
+    width: 100%;
+    margin-bottom: 5px;
+    h5 {
+      text-align: left;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 10px;
+      color: #B41C8B;
+      margin-bottom: 4px;
+      margin-left: 35px;
+    }
+    input {
+      width: 85%;
+      height: 20px;
+    }
+  }
+  &__AddAndPrice {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    &__quantity {
+      width: 90px;
+      input {
+        width: 15px;
+        text-align: center;
+        margin-left: 6px;
+      }
+      button {
+        width: 15px;
+        height: 15px;
+        font-size: 20px;
+        text-align: center;
+        background: transparent;
+        border: none;
+      }
+    }
+    &__add {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      background: #B41C8B;
+      border-radius: 4px;
+      button {
+        background: transparent;
+        border: none;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+      }
+      span {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-right: 5px;
+      }
+    }
+  }
+}
