@@ -51,7 +51,7 @@ function Modal() {
             <div className="modal__AddAndPrice">
               <div className="modal__AddAndPrice__quantity">
                 <button onClick={ decrement } >-</button>
-                <input type="number" value={ quantity }/>
+                <input type="number" value={ quantity } readOnly />
                 <button onClick={ increment } >+</button>
               </div>
               <div className="modal__AddAndPrice__add">

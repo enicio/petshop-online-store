@@ -1,6 +1,6 @@
 import Header from './components/header/header';
 import Main from './pages/main';
-import './App.css';
+import './App.scss';
 import SearchBar from './components/searchBar/searchbar';
 import FilterByCategorie from './components/filterByCategorie/filterByCategorie';
 import Modal from './components/modal/modal';
@@ -14,8 +14,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar />
-      <FilterByCategorie />
+      <div className="search-and-filter">
+        <SearchBar />
+        <FilterByCategorie />
+      </div>
       <Main />
       { (isModal)?<Modal />: ""}
     </div>

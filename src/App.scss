@@ -1,0 +1,14 @@
+$breakpoint-tablet: 768px;
+
+.App {
+  text-align: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .search-and-filter {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+

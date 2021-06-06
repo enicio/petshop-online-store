@@ -1,14 +1,22 @@
+$breakpoint-tablet: 768px;
+
 .categories {
   width: 100%;
   margin-top: 20px;
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 122px;
+  }
   &__scroll {
     height: 32px;
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: space-around;
+    }
     label {
-
       padding: 4px;
       font-family: Quicksand;
       font-style: normal;

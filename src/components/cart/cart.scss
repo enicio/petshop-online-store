@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+
 .cart {
   position: fixed;
   bottom: 15px;
@@ -7,7 +9,7 @@
   width: 80%;
   height: 40px;
   margin-left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-27%);
   background: #B41C8B;
   border-radius: 5px;
   padding: 0 5px 0 5px;
@@ -20,17 +22,52 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
+  div {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: column;
+    top: 25px;
+    right: 15px;
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    filter: unset;
+    bottom: unset;
+    margin-left: unset;
+    transform: unset;
+    min-width: unset;
+    #carticon {
+      fill: #000000;
+    }
+  }
 
   &__quantity {
     color: #FFFFFF;
+    min-width: 25px;
+    @media (min-width: $breakpoint-tablet) {
+      color: #000000;
+    }
   }
   &__text{
     color: #FFFFFF;
+    min-width: 160px;
+    font-size: 13px;
+    @media (min-width: $breakpoint-tablet) {
+      color: #000000;
+      min-width: unset;
+    }
   }
   &__price {
     color: #B41C8B;
     background: #FFFFFF;
     border-radius: 1000px;
+    font-size: 13px;
     padding: 4px;
+    min-width: 90px;
   }
 }
