@@ -1,19 +1,23 @@
 import React,{ useState, useRef, useContext} from 'react';
 
-import addToCart from '../../assets/addCart.svg';
+import addToCartIcon from '../../assets/addCart.svg';
 import { convertCurrency } from '../../service/service';
 import MyContext from '../../store/myContext';
 
 import './card.scss';
 
 function Card(props) {
-  const { setIsModal, setIdProduct } = useContext(MyContext);
+  const { setIsModal, setIdProduct, cartProducts, setCartProducts } = useContext(MyContext);
   const { id, name, img, price, DiscountPrice } = props.product;
 
   function openModal() {
     console.log('ops card')
     setIsModal(true)
     setIdProduct(id)
+  }
+
+  function addToCart() {
+    setCartProducts(() => cartProducts.concat(props.product)  )
   }
 
 
@@ -35,7 +39,7 @@ function Card(props) {
               </div>
           }
           <button>
-            <img src={ addToCart } alt="adicionar"/>
+            <img onClick={ addToCart} src={ addToCartIcon } alt="adicionar"/>
           </button>
         </div>
       </div>

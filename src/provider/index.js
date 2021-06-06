@@ -12,6 +12,7 @@ function Provider({ children }) {
   const [ categorieSearched, setCategorieSearched ] = useState('');
   const [isModal , setIsModal ] = useState(false);
   const [idProduct, setIdProduct ] = useState();
+  const [ cartProducts, setCartProducts ] = useState([]);
 
   useEffect( () => {
     async function fetchData() {
@@ -52,6 +53,8 @@ function Provider({ children }) {
     setIsModal,
     idProduct,
     setIdProduct,
+    cartProducts,
+    setCartProducts,
   };
 
   return (

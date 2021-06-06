@@ -1,14 +1,14 @@
-import { queryAllByPlaceholderText } from "@testing-library/dom";
 import React, { useContext, useState } from "react";
+import { convertCurrency } from "../../service/service";
 import MyContext from "../../store/myContext";
 import "./modal.scss";
 
 function Modal() {
-  const { setIsModal, idProduct, setIdProduct, products } = useContext(MyContext);
+  const { setIsModal, idProduct, setIdProduct, products, cartProducts, setCartProducts  } = useContext(MyContext);
   const [ quantity, setQuantity ] = useState(0)
 
   const productToModal = products.filter((product) => product.id === idProduct)
-  const {name, img, price  } = productToModal[0];
+  const { name, img, price  } = productToModal[0];
 
   function closeModal() {
       setIsModal(false);
@@ -22,6 +22,10 @@ function Modal() {
   function decrement() {
     if(quantity === 0) return
       setQuantity(() => quantity - 1 );
+  }
+
+  function addToCart() {
+    setCartProducts(() => cartProducts.concat(productToModal[0])  )
   }
 
     return(
@@ -51,8 +55,8 @@ function Modal() {
                 <button onClick={ increment } >+</button>
               </div>
               <div className="modal__AddAndPrice__add">
-                <button>Adicionar</button>
-                <span>{ price }</span>
+                <button onClick={ addToCart }>Adicionar</button>
+                <span>{ convertCurrency(price) }</span>
               </div>
             </div>
         </div>
