@@ -7,7 +7,7 @@ import './card.scss';
 
 function Card(props) {
 const { name, img, price, DiscountPrice } = props.product;
-console.log(props)
+// console.log(props)
 
   return(
     <div className="card">
