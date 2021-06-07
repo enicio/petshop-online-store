@@ -5,6 +5,7 @@
 </p>
 
 Protótipo da página de vendas de um petshop.
+A página foi desenvolvida em React e para o controle dos estados dos componentes foi utilizado Context. A estilização e toda a responsividade foi implementada com SASS.
 
 ## Funcionalidades
 
@@ -21,6 +22,7 @@ Protótipo da página de vendas de um petshop.
 ## Tecnologias utilizadas
 
 - [React](https://reactjs.org/)
+- [SASS](https://sass-lang.com/)
 
 ## Como executar
 
