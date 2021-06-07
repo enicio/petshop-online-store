@@ -1,4 +1,4 @@
-import React,{ useState, useRef, useContext} from 'react';
+import React,{ useContext} from 'react';
 
 import addToCartIcon from '../../assets/addCart.svg';
 import { convertCurrency } from '../../service/service';
@@ -11,7 +11,6 @@ function Card(props) {
   const { id, name, img, price, DiscountPrice } = props.product;
 
   function openModal() {
-    console.log('ops card')
     setIsModal(true)
     setIdProduct(id)
   }
@@ -20,12 +19,23 @@ function Card(props) {
     setCartProducts(() => cartProducts.concat(props.product)  )
   }
 
-
-// console.log(props)
+  const card_discount = {
+    width: "25%",
+    backgroundColor: "yellow",
+    fontFamily: "Quicksand",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "12px",
+    lineHeight: "15px",
+    color: "#FFFFFF",
+    background: "#77D500",
+    borderRadius: "2px",
+    padding: "3px",
+  }
 
   return(
       <div className="card">
-        {(DiscountPrice)? <span className="card_discount">{DiscountPrice}% OFF</span>:''}
+        {(DiscountPrice)? <div style={ card_discount } >{DiscountPrice}% OFF</div>:''}
         <img onClick={ openModal} className="card__product-image" src={ img } alt="imagem do pruduto"/>
         <h4 className="card__name">{name}</h4>
         <div className="card__botton">

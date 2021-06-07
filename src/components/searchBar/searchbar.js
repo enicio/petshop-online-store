@@ -18,7 +18,6 @@ function handleChange({ target }) {
 }
 
 useEffect( () => {
-  console.log('aqio')
   if(localSearch.length === 0){
     setSearch(localSearch)
   }

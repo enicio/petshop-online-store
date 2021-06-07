@@ -11,7 +11,6 @@ import Footer from './components/footer/footer';
 
 function App() {
   const { isModal } = useContext(MyContext);
-  console.log(isModal)
   return (
     <div className="App">
       <Header />
