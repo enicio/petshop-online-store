@@ -1,4 +1,4 @@
-<h1 align="center" > Eduick Dashboard</h1>
+<h1 align="center" >Petshop shopping cart</h1>
 
 <p align="center" >
 <img  src="https://ucarecdn.com/00f99ee5-106f-4a90-ad66-d1dc24a28359/Gifpetshop.gif"/>
