@@ -6,6 +6,7 @@ import FilterByCategorie from './components/filterByCategorie/filterByCategorie'
 import Modal from './components/modal/modal';
 import { useContext } from 'react';
 import MyContext from './store/myContext';
+import Footer from './components/footer/footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <FilterByCategorie />
       </div>
       <Main />
+      <Footer />
       { (isModal)?<Modal />: ""}
     </div>
   );

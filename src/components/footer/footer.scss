@@ -1,0 +1,45 @@
+$breakpoint-tablet: 768px;
+
+.footer {
+  display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-top: 3px solid #B41C8B;
+  
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1px;
+    color: #B41C8B;
+    h5 {
+      margin: 8px;
+    }
+    img {
+      margin: 4px 5px 0 5px;
+    }
+    a {
+      text-decoration: none;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+      text-decoration-line: underline;
+      color: #B41C8B;
+    }
+  }
+
+}
+
