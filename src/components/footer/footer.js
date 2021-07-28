@@ -4,7 +4,6 @@ import facebook from '../../assets/socialNetwork/facebook.png'
 import instagram from '../../assets/socialNetwork/instagram.png'
 import twitter from '../../assets/socialNetwork/twitter.png'
 import youtube from '../../assets/socialNetwork/youtube.png'
-import softcom from '../../assets/socialNetwork/softcom.png'
 
 import './footer.scss';
 
@@ -13,7 +12,6 @@ function Footer() {
     <footer className="footer">
       <div className="footer__" >
         <h5>Desenvolvido por</h5>
-        <img src={ softcom } alt="logo softcom" />
       </div>
       <div>
         <a href="/">Políticas de Privacidade</a>
